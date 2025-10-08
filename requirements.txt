@@ -1,0 +1,21 @@
+
+# Keylogger-Detector (Prototype)
+
+## Objective
+Lightweight heuristic-based detector to demonstrate detecting suspicious processes and file-writing behaviour associated with keyloggers.
+
+## Components
+- detector.py — main monitoring/detection script
+- simulator_writer.py — safe simulator to test detection (writes dummy logs)
+- NOTES.md — heuristics and tuning
+- detector_logs/alerts.log — generated runtime alerts
+
+## How to run
+1. Create and activate venv (see project docs)
+2. pip install -r requirements.txt
+3. python detector.py
+4. (Optional) simulate suspicious behavior: python simulator_writer.py
+
+## Caution
+This is a research/demo tool. Not production-ready. Does not detect all keyloggers and may produce false positives. For robust detection use system/endpoint protection tools and OS-specific APIs.
+
