@@ -1,0 +1,5 @@
+venv/
+_pycache_/
+*.pyc
+detector_logs/*.log
+
